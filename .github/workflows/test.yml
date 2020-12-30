@@ -23,9 +23,14 @@ jobs:
 
     # Basic test
     - uses: ./
+      id: pkg_version
       with:
         package: flask
         language: python
+    
+    - name: Display latest package version
+      run: |
+        echo "${{ steps.pkg_version.outputs.latestVersion }}"
 
     # Search for a specific python version
     - uses: ./
