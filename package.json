@@ -1,35 +1,42 @@
 {
-  "name": "javascript-action",
+  "name": "ghaction-package-versionn",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
-  "main": "index.js",
+  "description": ":octocat: GitHub Action to get the latest available version of a package on its remote registry (PyPi, NPM etc.)",
+  "main": "src/index.js",
   "scripts": {
     "lint": "eslint .",
-    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt",
     "test": "jest",
+    "test:dev": "jest --watchAll",
     "all": "npm run lint && npm run prepare && npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/Bruce17/ghaction-package-version.git"
   },
   "keywords": [
     "GitHub",
     "Actions",
-    "JavaScript"
+    "JavaScript",
+    "package",
+    "version",
+    "PyPi",
+    "NPM"
   ],
-  "author": "",
+  "author": "Bruce17 (https://github.com/Bruce17)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/Bruce17/ghaction-package-version/issues"
   },
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/Bruce17/ghaction-package-version#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5"
+    "@actions/core": "^1.2.5",
+    "bent": "^7.3.12",
+    "semver": "^7.3.4"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.25.1",
-    "eslint": "^7.4.0",
+    "@vercel/ncc": "^0.26.1",
+    "eslint": "^7.16.0",
     "jest": "^26.1.0"
   }
 }

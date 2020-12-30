@@ -1,116 +1,109 @@
-# Create a JavaScript Action
+# About
 
 <p align="center">
-  <a href="https://github.com/actions/javascript-action/actions"><img alt="javscript-action status" src="https://github.com/actions/javascript-action/workflows/units-test/badge.svg"></a>
+  <a href="https://github.com/bruce17/ghaction-package-version/releases/latest"><img alt="package version latest release" src="https://img.shields.io/github/release/bruce17/ghaction-package-version.svg?style=flat"></a>
+  <a href="https://github.com/marketplace/actions/package-version"><img alt="marketplace package version" src="https://img.shields.io/badge/marketplace-package--version-blue?logo=github&style=flat"></a>
+  <a href="https://github.com/bruce17/ghaction-package-version/actions"><img alt="javscript-action status" src="https://github.com/bruce17/ghaction-package-version/workflows/units-test/badge.svg"></a>
 </p>
 
-Use this template to bootstrap the creation of a JavaScript action.:rocket:
+:octocat: GitHub Action to get the latest available version of a package on its remote registry (PyPi, NPM etc.)
 
-This template includes tests, linting, a validation workflow, publishing, and versioning guidance.
+___
 
-If you are new, there's also a simpler introduction.  See the [Hello World JavaScript Action](https://github.com/actions/hello-world-javascript-action)
+* [Customizing](#customizing)
+  * [Inputs](#inputs)
+  * [Outputs](#outputs)
+* [Todo](#todo)
+* [Keep up-to-date with GitHub Dependabot](#keep-up-to-date-with-github-dependabot)
+* [Contributing](#contributing)
+* [License](#license)
 
-## Create an action from this template
 
-Click the `Use this Template` and provide the new repo details for your action
+## Customizing
 
-## Code in Main
+### Inputs
 
-Install the dependencies
+Following inputs can be used as step.with keys:
 
-```bash
-npm install
+| Name       | Type      | Description |
+|------------|-----------|-------------|
+| package    | string    | Name of the package to search for. |
+| language   | string    | The target language and thus backend registry. Available options: `python` |
+| registry   | string    | Backend registry to search for the package. Format: `http(s)://some.backend.com/with/search/for/%s` where `%s` will be replaced by the actual package name. Example for PyPi: `https://pypi.org/pypi/%s/json` |
+| remoteType | string    | Expect this file type from the backend result. Default: `json`. |
+| conditions | multiline | Optional search conditions for a specific registry, see [Python Conditions](#python-conditions). Default: `''` |
+
+By choosing a `language` (e.g. `python`) the registry url will automatically set to default one (e.g. `PyPi` for `python`). You can however overwrite it with a custom registry if required.
+
+#### Python Conditions
+
+For python there are some conditions to filter the found packages. PyPi returns some Python version requirements in its backend result:
+
+```json
+  "python_version": "py2.py3",
+  "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*",
 ```
 
-Run the tests :heavy_check_mark:
-
-```bash
-$ npm test
-
- PASS  ./index.test.js
-  ✓ throws invalid number (3ms)
-  ✓ wait 500 ms (504ms)
-  ✓ test runs (95ms)
-...
-```
-
-## Change action.yml
-
-The action.yml defines the inputs and output for your action.
-
-Update the action.yml with your name, description, inputs and outputs for your action.
-
-See the [documentation](https://help.github.com/en/articles/metadata-syntax-for-github-actions)
-
-## Change the Code
-
-Most toolkit and CI/CD operations involve async operations so the action is run in an async function.
-
-```javascript
-const core = require('@actions/core');
-...
-
-async function run() {
-  try {
-      ...
-  }
-  catch (error) {
-    core.setFailed(error.message);
-  }
-}
-
-run()
-```
-
-See the [toolkit documentation](https://github.com/actions/toolkit/blob/master/README.md#packages) for the various packages.
-
-## Package for distribution
-
-GitHub Actions will run the entry point from the action.yml. Packaging assembles the code into one file that can be checked in to Git, enabling fast and reliable execution and preventing the need to check in node_modules.
-
-Actions are run from GitHub repos.  Packaging the action will create a packaged action in the dist folder.
-
-Run prepare
-
-```bash
-npm run prepare
-```
-
-Since the packaged index.js is run from the dist folder.
-
-```bash
-git add dist
-```
-
-## Create a release branch
-
-Users shouldn't consume the action from master since that would be latest code and actions can break compatibility between major versions.
-
-Checkin to the v1 release branch
-
-```bash
-git checkout -b v1
-git commit -a -m "v1 release"
-```
-
-```bash
-git push origin v1
-```
-
-Note: We recommend using the `--license` option for ncc, which will create a license file for all of the production node modules used in your project.
-
-Your action is now published! :rocket:
-
-See the [versioning documentation](https://github.com/actions/toolkit/blob/master/docs/action-versioning.md)
-
-## Usage
-
-You can now consume the action by referencing the v1 branch
+You can filter for Python v2 packages by passing this filter:
 
 ```yaml
-uses: actions/javascript-action@v1
-with:
-  milliseconds: 1000
+    # ...
+    - uses: bruce17/package-version@v1
+      with:
+        package: flask
+        language: python
+        conditions: |
+          pythonVersion: py2
 ```
 
-See the [actions tab](https://github.com/actions/javascript-action/actions) for runs of this action! :rocket:
+Same is possible for a specfic python version:
+
+```yaml
+    # ...
+    - uses: bruce17/package-version@v1
+      with:
+        package: flask
+        language: python
+        conditions: |
+          pythonVersion: 2.7
+```
+
+
+### Outputs
+
+Following outputs are available:
+
+| Name          | Type      | Description |
+|---------------|-----------|-------------|
+| latestVersion | string    | Latest found package version in the registry. |
+
+
+## Todo
+
+At the moment only one language/registry is supported:
+
+[ ] Add support for Node.js/NPM
+
+
+## Keep up-to-date with GitHub Dependabot
+
+Since [Dependabot](https://docs.github.com/en/github/administering-a-repository/keeping-your-actions-up-to-date-with-github-dependabot) has [native GitHub Actions support](https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#package-ecosystem), to enable it on your GitHub repo all you need to do is add the `.github/dependabot.yml` file:
+
+```yaml
+version: 2
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+```
+
+## Contributing
+
+Want to contribute? Awesome! The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon:. If you want to open a pull request, please read the [contributing guidelines](.github/CONTRIBUTING.md).
+
+
+## License
+
+MIT. See `LICENSE` for more details.

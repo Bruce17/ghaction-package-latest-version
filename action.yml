@@ -1,13 +1,26 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Package Version'
+description: ':octocat: GitHub Action to get the latest available version of a package on its remote registry (PyPi, NPM etc.)'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  package:
+    description: 'Name of the package to search for.'
     required: true
-    default: '1000'
+  language:
+    description: 'The target language and thus backend registry.'
+    required: true
+  registry:
+    description: 'Backend registry to search for the package. Format: "http(s)://some.backend.com/with/search/for/%s" where "%s" will be replaced by the actual package name.'
+    required: false
+  remoteType:
+    description: 'Expect this file type from the backend result e.g. "json".'
+    required: false
+    default: 'json'
+  conditions:
+    description: 'Optional search conditions for a specific registry. See readme for more details.'
+    required: false
+    default: ''
 outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+  latestVersion:
+    description: 'Latest found package version in the registry.'
 runs:
   using: 'node12'
   main: 'dist/index.js'
