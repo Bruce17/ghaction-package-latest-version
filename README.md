@@ -48,7 +48,7 @@ You can filter for Python v2 packages by passing this filter:
 
 ```yaml
     # ...
-    - uses: bruce17/package-version@v1
+    - uses: bruce17/package-latest-version@v1
       with:
         package: flask
         language: python
@@ -60,7 +60,7 @@ Same is possible for a specfic python version:
 
 ```yaml
     # ...
-    - uses: bruce17/package-version@v1
+    - uses: bruce17/package-latest-version@v1
       with:
         package: flask
         language: python
