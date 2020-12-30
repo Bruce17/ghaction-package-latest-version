@@ -1,5 +1,8 @@
-name: 'Package Version'
+name: 'package-latest-version'
 description: ':octocat: GitHub Action to get the latest available version of a package on its remote registry (PyPi, NPM etc.)'
+branding:
+  icon: package
+  color: blue
 inputs:
   package:
     description: 'Name of the package to search for.'

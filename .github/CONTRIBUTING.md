@@ -7,14 +7,14 @@ to the public under the [project's open source license](LICENSE).
 
 ## Submitting a pull request
 
-1. [Fork](https://github.com/bruce17/ghaction-package-version/fork) and clone the repository
+1. [Fork](https://github.com/bruce17/ghaction-package-latest-version/fork) and clone the repository
 2. Configure and install the dependencies: `npm install`
 3. Create a new branch: `git checkout -b my-branch-name`
 4. Make your changes
 5. Make sure the tests pass: `npm test`
 6. Format code and build javascript artifacts: `npm run prepare`
 7. Validate all code has correctly formatted and built: `npm run lint`
-8. Push to your fork and [submit a pull request](https://github.com/bruce17/ghaction-package-version/compare)
+8. Push to your fork and [submit a pull request](https://github.com/bruce17/ghaction-package-latest-version/compare)
 9. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
 Here are a few things you can do that will increase the likelihood of your pull request being accepted:

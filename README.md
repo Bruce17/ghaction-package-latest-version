@@ -1,9 +1,9 @@
 # About
 
 <p align="center">
-  <a href="https://github.com/bruce17/ghaction-package-version/releases/latest"><img alt="package version latest release" src="https://img.shields.io/github/release/bruce17/ghaction-package-version.svg?style=flat"></a>
-  <a href="https://github.com/marketplace/actions/package-version"><img alt="marketplace package version" src="https://img.shields.io/badge/marketplace-package--version-blue?logo=github&style=flat"></a>
-  <a href="https://github.com/bruce17/ghaction-package-version/actions"><img alt="javscript-action status" src="https://github.com/bruce17/ghaction-package-version/workflows/units-test/badge.svg"></a>
+  <a href="https://github.com/bruce17/ghaction-package-latest-version/releases/latest"><img alt="package-latest-version release" src="https://img.shields.io/github/release/bruce17/ghaction-package-latest-version.svg?style=flat"></a>
+  <a href="https://github.com/marketplace/actions/package-version"><img alt="marketplace package-latest-version" src="https://img.shields.io/badge/marketplace-package--version-blue?logo=github&style=flat"></a>
+  <a href="https://github.com/bruce17/ghaction-package-latest-version/actions"><img alt="javscript-action status" src="https://github.com/bruce17/ghaction-package-latest-version/workflows/units-test/badge.svg"></a>
 </p>
 
 :octocat: GitHub Action to get the latest available version of a package on its remote registry (PyPi, NPM etc.)
