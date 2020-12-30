@@ -6,8 +6,8 @@ describe('PythonRegistry', () => {
   const inst = new PythonRegistry()
 
   // Mock the download method to not hit the internet
-  inst.download = jest.fn(() => {
-    return JSON.parse(fs.readFileSync(path.resolve(__dirname + '/../files/pypi-flask.json')))
+  inst.download = jest.fn((opt) => {
+    return JSON.parse(fs.readFileSync(path.resolve(__dirname + `/../files/pypi-${opt.package}.json`)))
   })
 
   test('class exists', () => {
@@ -22,6 +22,7 @@ describe('PythonRegistry', () => {
 
     describe('is valid', () => {
       const testData = [
+        // Package "flask"
         {
           input: {
             package: 'flask',
@@ -70,6 +71,28 @@ describe('PythonRegistry', () => {
             conditions: 'requiresPython: 2.7',
           },
           expected: '1.1.2'
+        },
+
+        // Package "opencanary"
+        {
+          input: {
+            package: 'opencanary',
+          },
+          expected: '0.5.6'
+        },
+        {
+          input: {
+            package: 'opencanary',
+            conditions: 'pythonVersion: py3',
+          },
+          expected: '0.5.6'
+        },
+        {
+          input: {
+            package: 'opencanary',
+            conditions: 'pythonVersion: py3\nrequiresPython: 3.7',
+          },
+          expected: '0.5.5'
         },
       ]
   
