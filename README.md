@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://github.com/bruce17/ghaction-package-latest-version/releases/latest"><img alt="package-latest-version release" src="https://img.shields.io/github/release/bruce17/ghaction-package-latest-version.svg?style=flat"></a>
   <a href="https://github.com/marketplace/actions/package-latest-version"><img alt="marketplace package-latest-version" src="https://img.shields.io/badge/marketplace-package--latest--version-blue?logo=github&style=flat"></a>
-  <a href="https://github.com/bruce17/ghaction-package-latest-version/actions"><img alt="javscript-action status" src="https://github.com/bruce17/ghaction-package-latest-version/workflows/units-test/badge.svg"></a>
+  <a href="https://github.com/bruce17/ghaction-package-latest-version/actions"><img alt="javscript-action test status" src="https://img.shields.io/github/workflow/status/bruce17/ghaction-package-latest-version/unit-tests/main?label=test&logo=github"></a>
 </p>
 
 :octocat: GitHub Action to get the latest available version of a package on its remote registry (PyPi, NPM etc.)
