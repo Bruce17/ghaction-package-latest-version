@@ -1,0 +1,1221 @@
+{
+  "_id": "@bruce17/dependable",
+  "_rev": "15-d838b60308085b6379253c8405a94767",
+  "name": "@bruce17/dependable",
+  "description": "A minimalist dependency injection framework for node.js.",
+  "dist-tags": {
+    "latest": "1.3.1"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "@bruce17/dependable",
+      "version": "1.0.0",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec test/*.spec.js"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "mocha": "^2.2.5"
+      },
+      "gitHead": "068c07d99f850eabded14d4ea1cd4b222a7835b8",
+      "description": "Dependable\r ==========",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.0.0",
+      "_shasum": "cc0c72e2674a0b807cd590f6f349359a8cde86dc",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "cc0c72e2674a0b807cd590f6f349359a8cde86dc",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.0.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.0.1": {
+      "name": "@bruce17/dependable",
+      "version": "1.0.1",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "ci",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec test/*.spec.js"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "mocha": "^2.2.5"
+      },
+      "gitHead": "d9a76935ac3efd4a64026696c5038a4d24350476",
+      "description": "[![npm package](https://img.shields.io/npm/v/dependable.svg?style=flat-square)](https://www.npmjs.org/package/dependable)\r [![Dependency Status](https://david-dm.org/Bruce17/dependable.svg?style=flat-square)](https://david-dm.org/Bruce17/dependable)\r [![d",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.0.1",
+      "_shasum": "840cbe81b67130bbdd3cfc9a0e1eb2428ff5ccd6",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "840cbe81b67130bbdd3cfc9a0e1eb2428ff5ccd6",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.0.1.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.0.2": {
+      "name": "@bruce17/dependable",
+      "version": "1.0.2",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec test/*.spec.js"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "mocha": "^2.2.5"
+      },
+      "gitHead": "b9d544e90303ba878a6a60c8791f667956b7aee1",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![Dependency Status](https://david-dm.org/Bruce17/dependable.svg?style=flat-square)](https://david-dm.org/Bruce17",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.0.2",
+      "_shasum": "424f67a87b2885f69f75c609149385fd0108ce99",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "424f67a87b2885f69f75c609149385fd0108ce99",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.0.2.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.1.0": {
+      "name": "@bruce17/dependable",
+      "version": "1.1.0",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec test/*.spec.js"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "mocha": "^2.2.5"
+      },
+      "gitHead": "6e6324f47e7c157d050b208b0f5225f741e19b8c",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![Dependency Status](https://david-dm.org/Bruce17/dependable.svg?style=flat-square)](https://david-dm.org/Bruce17",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.1.0",
+      "_shasum": "612ec8fcfb9f3e52100b5ab516dc04248dc8160f",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "612ec8fcfb9f3e52100b5ab516dc04248dc8160f",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.1.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.1.1": {
+      "name": "@bruce17/dependable",
+      "version": "1.1.1",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec test/*.spec.js"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "mocha": "^2.2.5"
+      },
+      "gitHead": "a380415f8f82c90fc79d84e51236d4a0c947241d",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![Dependency Status](https://david-dm.org/Bruce17/dependable.svg?style=flat-square)](https://david-dm.org/Bruce17",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.1.1",
+      "_shasum": "5feeefbf8a34b4d41e84f9a99c05869a4d32410b",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "5feeefbf8a34b4d41e84f9a99c05869a4d32410b",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.1.1.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.0": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.0",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R nyan --watch"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^2.3.0",
+        "mocha": "^2.2.5",
+        "should": "^6.0.3",
+        "sinon": "^1.14.1",
+        "sinon-chai": "^2.7.0"
+      },
+      "gitHead": "ba130fce9ec5e3894f70e8bc31e2b254e12b0837",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![Dependency Status](https://david-dm.org/Bruce17/dependable.svg?style=flat-square)](https://david-dm.org/Bruce17",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.0",
+      "_shasum": "a49f4b3f94498d49f4cf5dfa265f29610ce0cd19",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "a49f4b3f94498d49f4cf5dfa265f29610ce0cd19",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.1": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.1",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R nyan --watch"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "mocha": "^2.2.5",
+        "should": "^6.0.3",
+        "sinon": "^1.14.1",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "e918f7b70c1bd1fb8e545f0914001fdc294ac31e",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.1",
+      "_shasum": "5907538903b01bf29d99c197fc7727060f3582ac",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "5907538903b01bf29d99c197fc7727060f3582ac",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.1.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.2": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.2",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R nyan --watch"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "mocha": "^2.2.5",
+        "should": "^6.0.3",
+        "sinon": "^1.14.1",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "fc4bf18e9b8f379faac5a243c26f933109e5e41b",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.2",
+      "_shasum": "d6b1cd6ac53fb3deee43757a3ceec3ca4dfdc82a",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "d6b1cd6ac53fb3deee43757a3ceec3ca4dfdc82a",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.2.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.3": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.3",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R nyan --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "test-coveralls": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | node ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+        "codeclimate": "codeclimate < ./coverage/lcov.info"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "codeclimate-test-reporter": "0.0.4",
+        "istanbul-harmony": "^0.3.12",
+        "mocha": "^2.2.5",
+        "should": "^6.0.3",
+        "sinon": "^1.14.1",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "b4fa8eddb00bdefbca700bc6008d070cd0595353",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.3",
+      "_shasum": "df41e242048a0574bd242ddc2e398df0adffcaa4",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "df41e242048a0574bd242ddc2e398df0adffcaa4",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.3.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.4": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.4",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R nyan --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "coveralls < ./coverage/lcov.info",
+        "codeclimate": "codeclimate < ./coverage/lcov.info"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "codeclimate-test-reporter": "0.0.4",
+        "coveralls": "^2.11.2",
+        "istanbul-harmony": "^0.3.12",
+        "mocha": "^2.2.5",
+        "should": "^6.0.3",
+        "sinon": "^1.14.1",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "8c3387e97e0ca6299967fa85b78275178e8b5adf",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/",
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.4",
+      "_shasum": "e1c3879e6a739783b70f0ba3c4d61f87cb0d2310",
+      "_from": ".",
+      "_npmVersion": "2.11.0",
+      "_nodeVersion": "0.12.4",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "e1c3879e6a739783b70f0ba3c4d61f87cb0d2310",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.4.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.5": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.5",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R nyan --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "coveralls < ./coverage/lcov.info",
+        "codeclimate": "codeclimate < ./coverage/lcov.info"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "codeclimate-test-reporter": "0.0.4",
+        "coveralls": "^2.11.2",
+        "istanbul-harmony": "^0.3.15",
+        "mocha": "^2.2.5",
+        "should": "^7.0.1",
+        "sinon": "^1.15.3",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "6d04bd4b27b31f6e431d19d91601cfd7cfbe3eb3",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/",
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.5",
+      "_shasum": "ab93b858d1210e476d741a3d3af099f090a81215",
+      "_from": ".",
+      "_npmVersion": "2.11.2",
+      "_nodeVersion": "0.12.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "ab93b858d1210e476d741a3d3af099f090a81215",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.5.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.6": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.6",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R progress --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "coveralls < ./coverage/lcov.info",
+        "codeclimate": "codeclimate < ./coverage/lcov.info",
+        "generate-docs": "jsdoc --destination docs --package package.json --readme README.md --recurse source"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "codeclimate-test-reporter": "0.0.4",
+        "coveralls": "^2.11.2",
+        "istanbul-harmony": "^0.3.15",
+        "jsdoc": "^3.3.2",
+        "mocha": "^2.2.5",
+        "should": "^7.0.1",
+        "sinon": "^1.15.3",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "37cf3052cccbad7b01cb68d033eb3b74aee75855",
+      "description": "[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r [![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/",
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.6",
+      "_shasum": "5ab919519bdc9924ba74868b4884eb33d7e76f4d",
+      "_from": ".",
+      "_npmVersion": "2.11.2",
+      "_nodeVersion": "0.12.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "5ab919519bdc9924ba74868b4884eb33d7e76f4d",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.6.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {}
+    },
+    "1.2.7": {
+      "name": "@bruce17/dependable",
+      "version": "1.2.7",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "scripts": {
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R progress --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info",
+        "generate-docs": "jsdoc --destination docs --package package.json --readme README.md --recurse source"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "codeclimate-test-reporter": "^0.3.3",
+        "coveralls": "^2.11.2",
+        "istanbul-harmony": "^0.3.15",
+        "jsdoc": "^3.3.2",
+        "mocha": "^2.2.5",
+        "should": "^9.0.2",
+        "sinon": "^1.15.3",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "57c7d323ad35a60a16253191a9c7c082ae38e941",
+      "description": "Dependable ==========",
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.2.7",
+      "_shasum": "d42ca74df873e1ad358fae3447f0e362bbe56919",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "d42ca74df873e1ad358fae3447f0e362bbe56919",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.2.7.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/dependable-1.2.7.tgz_1468313748896_0.22051133611239493"
+      },
+      "directories": {}
+    },
+    "1.3.0": {
+      "name": "@bruce17/dependable",
+      "version": "1.3.0",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "scripts": {
+        "lint": "eslint source/",
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R progress --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info",
+        "generate-docs": "jsdoc --destination docs --package package.json --readme README.md --recurse source"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^3.0.0",
+        "codeclimate-test-reporter": "^0.3.3",
+        "coveralls": "^2.11.2",
+        "eslint": "^2.13.1",
+        "istanbul-harmony": "^0.3.15",
+        "jsdoc": "^3.3.2",
+        "mocha": "^2.2.5",
+        "should": "^9.0.2",
+        "sinon": "^1.15.3",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "9f350a4ac368e19ae619fa810496cb8fad65ce5a",
+      "description": "A minimalist dependency injection framework for node.js.",
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.3.0",
+      "_shasum": "429dcfe985a88d53dc14503a86d792a3e9919be6",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "429dcfe985a88d53dc14503a86d792a3e9919be6",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.3.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/dependable-1.3.0.tgz_1469689403238_0.08317061536945403"
+      },
+      "directories": {}
+    },
+    "1.3.1": {
+      "name": "@bruce17/dependable",
+      "version": "1.3.1",
+      "main": "source/index.js",
+      "engines": {
+        "node": ">=0.10.0",
+        "iojs": ">=1.0.0"
+      },
+      "keywords": [
+        "dependency",
+        "injection",
+        "di",
+        "container",
+        "ioc"
+      ],
+      "author": {
+        "name": "Sean Hess"
+      },
+      "contributors": [
+        {
+          "name": "Jamison Dance",
+          "email": "jergason@gmail.com",
+          "url": "http://jamisondance.com"
+        },
+        {
+          "name": "Michael Raith",
+          "email": "Bruce17@users.noreply.github.com",
+          "url": "https://github.com/Bruce17"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/dependable.git"
+      },
+      "bugs": {
+        "url": "https://github.com/Bruce17/dependable/issues"
+      },
+      "scripts": {
+        "lint": "eslint source/",
+        "test": "mocha -R spec ",
+        "test-watch": "mocha -R progress --watch",
+        "test-cov": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha  -- -u exports",
+        "test-travis": "node --harmony node_modules/istanbul-harmony/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "test-appveyor": "npm run test",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info",
+        "codacy": "node ./node_modules/.bin/codacy-coverage < ./coverage/lcov.info",
+        "generate-docs": "jsdoc --destination docs --package package.json --readme README.md --recurse source"
+      },
+      "license": "MIT",
+      "dependencies": {},
+      "devDependencies": {
+        "chai": "^4.1.2",
+        "codacy-coverage": "^2.0.0",
+        "codeclimate-test-reporter": "^0.5.0",
+        "coveralls": "^3.0.0",
+        "eslint": "^2.13.1",
+        "istanbul-harmony": "^0.3.15",
+        "jsdoc": "^3.3.2",
+        "mocha": "^3.5.3",
+        "should": "^13.1.3",
+        "sinon": "^3.3.0",
+        "sinon-chai": "^2.8.0"
+      },
+      "gitHead": "1e836a5d7e2d3f07cec019731c42df96674e3b04",
+      "description": "A minimalist dependency injection framework for node.js.",
+      "homepage": "https://github.com/Bruce17/dependable#readme",
+      "_id": "@bruce17/dependable@1.3.1",
+      "_npmVersion": "5.5.1",
+      "_nodeVersion": "8.9.3",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "integrity": "sha512-xLUocMyirR32idFL+1vGZZfAgRMopwH4j0drBB+tBS1FZVz1ROF7dZriSC7oRBoyIQ/scjlsKhW0Q2NTQK94SA==",
+        "shasum": "892eb66ca0647e685d569405f3e2dc1eb5b19335",
+        "tarball": "https://registry.npmjs.org/@bruce17/dependable/-/dependable-1.3.1.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/dependable-1.3.1.tgz_1515242117696_0.6529318282846361"
+      },
+      "directories": {}
+    }
+  },
+  "readme": "# Dependable\r\n\r\nA minimalist dependency injection framework for node.js.\r\n\r\n\r\n**NPM**:\r\n[![npm package](https://img.shields.io/npm/v/@bruce17/dependable.svg?style=flat-square)](https://www.npmjs.org/package/@bruce17/dependable)\r\n\r\n**GitHub**:\r\n[![tag:?](https://img.shields.io/github/tag/Bruce17/dependable.svg?style=flat-square)](https://github.com/Bruce17/dependable/releases)\r\n\r\n**Dependencies**:\r\n[![Dependency Status](https://david-dm.org/Bruce17/dependable.svg?style=flat-square)](https://david-dm.org/Bruce17/dependable)\r\n[![devDependency Status](https://david-dm.org/Bruce17/dependable/dev-status.svg?style=flat-square)](https://david-dm.org/Bruce17/dependable?type=dev)\r\n\r\n**Code Climate**:\r\n[![code climate](https://img.shields.io/codeclimate/github/Bruce17/dependable.svg?style=flat-square)](https://codeclimate.com/github/Bruce17/dependable)\r\n[![Test Coverage](https://codeclimate.com/github/Bruce17/dependable/badges/coverage.svg)](https://codeclimate.com/github/Bruce17/dependable/coverage)\r\n\r\n**Coveralls**:\r\n[![coverage:?](https://img.shields.io/coveralls/Bruce17/dependable/master.svg?style=flat-square)](https://coveralls.io/r/Bruce17/dependable)\r\n\r\n**Codacy**:\r\n[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3424bd58c7ad43ceabf232e33d86d40b)](https://www.codacy.com/app/mraith/dependable)\r\n[![Codacy Coverage](https://api.codacy.com/project/badge/Coverage/3424bd58c7ad43ceabf232e33d86d40b)](https://www.codacy.com/app/mraith/dependable)\r\n\r\n**Tarvis CI**:\r\n[![Build Status - Travis CI](https://travis-ci.org/Bruce17/dependable.svg?branch=master)](https://travis-ci.org/Bruce17/dependable)\r\n\r\n**AppVeyor CI**:\r\n[![Build status - AppVeyor CI](https://ci.appveyor.com/api/projects/status/me1uol5uvaak0xtg/branch/master?svg=true)](https://ci.appveyor.com/project/Bruce17/dependable/branch/master)\r\n\r\n**Snyk**:\r\n[![Known Vulnerabilities](https://snyk.io/test/github/bruce17/dependable/badge.svg)](https://snyk.io/test/github/bruce17/dependable)\r\n\r\n\r\n## Example\r\n\r\n### Create a container\r\n\r\nCreate a new container by calling `dependable.container`:\r\n\r\n```js\r\nvar dependable = require('@bruce17/dependable');\r\nvar container = dependable.container();\r\n```\r\n\r\n### Register some dependencies\r\n\r\nRegister a few dependencies for later use (a string and an object):\r\n\r\n```js\r\ncontainer.register('occupation', 'tax attorney');\r\ncontainer.register('transport', {\r\n  type: 'station wagon',\r\n  material: 'wood-paneled'\r\n});\r\ncontainer.register({\r\n  'foo': 'bar',\r\n  'obj': {\r\n    'str': 'test',\r\n    'num': 123\r\n  }\r\n});\r\n```\r\n\r\n### Register some library dependencies\r\n\r\nRegister a few library dependencies e.g. `lodash` for later use:\r\n\r\n```js\r\nvar lodash = require('lodash');\r\nvar promise = require('promise');\r\nvar express = require('express');\r\n\r\ncontainer.registerLibrary('lodash', lodash);\r\ncontainer.registerLibrary({\r\n  'promise': promise,\r\n  'express': express\r\n});\r\n```\r\n\r\n### Register a dependency that has other dependencies\r\n\r\nWhen the argument is a function, the function's arguments are automatically\r\npopulated with the correct dependencies, and the return value of the function\r\nis registered as the dependency:\r\n\r\n```js\r\ncontainer.register('song', function (occupation, transport, legalStatus) {\r\n  var song = {};\r\n\r\n  song.chorus = function chorus() {\r\n    return [\r\n      'I\\'m a ' + occupation,\r\n      'On a ' + transport.material + ' ' + transport.type + ' I ride',\r\n      'And I\\'m ' + legalStatus.message\r\n    ].join('\\n');\r\n  };\r\n\r\n  return song;\r\n});\r\n```\r\n\r\n### Register a dependency out-of-order\r\n\r\n`song` depends on a `legalStatus`, which hasn't been registered yet.\r\nDependable resolves dependencies lazily, so we can define this dependency\r\nafter-the-fact:\r\n\r\n```js\r\ncontainer.register('legalStatus', {\r\n  warrants: [],\r\n  message: 'without outstanding warrants'\r\n});\r\n```\r\n\r\n### Resolve a dependency and use it\r\n\r\nLike with container.register, the function arguments are automatically resolved, along\r\nwith their dependencies:\r\n\r\n```js\r\ncontainer.resolve(function (song) {\r\n  /*\r\n   * I'm a tax attorney\r\n   * On a wood-paneled station wagon I ride\r\n   * And I'm without outstanding warrants\r\n   */\r\n  console.log(song.chorus());\r\n});\r\n```\r\n\r\n### Re-register dependencies\r\n\r\nAs it stands, `song` returns boring, non-catchy lyrics. One way to change its behavior\r\nis to re-register its dependencies:\r\n\r\n```js\r\ncontainer.register('occupation', 'cowboy');\r\ncontainer.register('legalStatus', {\r\n  warrants: [\r\n    {\r\n      for: 'shooting the sheriff',\r\n      notes: 'did not shoot the deputy'\r\n    }\r\n  ],\r\n  message: 'wanted: dead or alive'\r\n});\r\n```\r\n\r\nThis is really useful in a number of situations:\r\n\r\n1. A container can register configuration parameters for an application---for example, a port---and allows them to be changed later\r\n2. Dependencies can be replaced with mock objects in order to test other dependencies\r\n\r\nTo resolve the updated dependencies, provide an empty override:\r\n\r\n```js\r\ncontainer.resolve({}, function (song) {\r\n  /*\r\n   * I'm a cowboy\r\n   * On a wood-paneled station wagon I ride\r\n   * And I'm wanted: dead or alive\r\n   */\r\n  console.log(song.chorus());\r\n});\r\n```\r\n\r\n### Override dependencies at resolve time\r\n\r\nIt's also possible to override dependencies at resolve time:\r\n\r\n```js\r\nvar horse = {\r\n  type: 'horse',\r\n  material: 'steel'\r\n};\r\n\r\ncontainer.resolve({ transport: horse }, function (song) {\r\n  /*\r\n   * I'm a cowboy\r\n   * On a steel horse I ride\r\n   * And I'm wanted: dead or alive\r\n   */\r\n  console.log(song.chorus());\r\n});\r\n```\r\n\r\nSounds like a hit!\r\n\r\n### Load all dependencies in a folder\r\n\r\nYou can load a single file into the container:\r\n\r\n```js\r\ncontainer.load('Foo.js')\r\n\r\nvar foo = container.get('Foo');\r\n```\r\n\r\nLoading multiple files in a folder is also possible:\r\n\r\n```js\r\n// contains e.g. 'Foo.js', 'Bar.js'\r\ncontainer.load('dummy-dir/');\r\n\r\nvar foo = container.get('Foo');\r\nvar bar = container.get('Bar');\r\n```\r\n\r\nIf necessary you can also add a prefix (namespace) to each dependency to avoid conflicts with other dependencies:\r\n\r\n```js\r\n// contains e.g. 'Foo.js', 'Bar.js'\r\ncontainer.load(\r\n  'dummy-dir/',\r\n  {\r\n    prefix: 'Test_'\r\n  }\r\n);\r\n\r\nvar foo = container.get('Test_Foo');\r\nvar bar = container.get('Test_Bar');\r\n```\r\n\r\n**Notice**: Be careful with references to dependencies with prefixes. You must always add the prefix to your dependency.\r\n\r\n\r\n## API\r\n\r\n* `container.register(name, function)` - Registers a dependency by name. `function` can be a function that takes dependencies and returns anything, or an object itself with no dependencies.\r\n* `container.register(hash)` - Registers a hash of names and dependencies. This is useful for setting configuration constants.\r\n* `container.registerLibrary(name, function)` - Registers a library dependency by name. `function` should be a library loaded via require and has the module pattern style.\r\n* `container.registerLibrary(hash)` - Registers a hash of names and library dependencies.\r\n* `container.load(fileOrFolder)` - Registers a file, using its file name as the name, or all files in a folder. Does not traverse subdirectories.\r\n* `container.load(folder, subdirectory)` - Registers all files in a folder and optional sub folders. Does traverse only defined subdirectories.\r\n* `container.load(folder, options)`, `container.load(folder, subdirectory, options)` - Registers a file, using its file name as the name, or all files in a folder. Pass optional options to it to add an `prefix`/`postfix` to every loaded dependency e.g. `{prefix: 'Models_'}` will prepend `Models_` or `{postfix: 'Controller'}` will append Controller to every dependency registered in this container.\r\n* `container.get(name, overrides = {})` - Returns a dependency by name, with all dependencies injected. If you specify overrides, the dependency will be given those overrides instead of those registered.\r\n* `container.resolve(overrides={}, cb)` - Calls `cb` like a dependency function, injecting any dependencies found in the signature. Like `container.get`, this supports overrides.\r\n* `container.list()` - Return a list of registered dependencies.\r\n* `container.find()` - Search for dependencies optionally with placeholders e.g. \"foo*\" to receive all dependencies starting with \"foo\".\r\n* `container.clearAll()` - Helper method to clear all registered dependencies e.g. for easy unit testing.\r\n\r\n## Development\r\n\r\nTests are written with mocha. To run the tests, run `npm test`.\r\nYou can also run tests with a watcher: `npm run-script test-watch`.\r\n\r\n## Notice\r\n\r\nThis is a fork of the original [dependable](https://github.com/idottv/dependable) node module.\r\nThe original module on npm was outdated and not maintenanced any more.\r\nI forked the original one, removed coffee script (ugly crap in my eyes) and made the whole thing work again.\r\n\r\n## License\r\n\r\nCopyright (c) 2013 i.TV LLC\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n",
+  "maintainers": [
+    {
+      "name": "bruce17",
+      "email": "mia87@web.de"
+    }
+  ],
+  "time": {
+    "modified": "2018-01-06T12:35:18.723Z",
+    "created": "2015-06-02T11:43:53.411Z",
+    "1.0.0": "2015-06-02T11:43:53.411Z",
+    "1.0.1": "2015-06-02T11:49:05.821Z",
+    "1.0.2": "2015-06-02T11:58:31.651Z",
+    "1.1.0": "2015-06-02T12:51:54.403Z",
+    "1.1.1": "2015-06-02T12:58:46.354Z",
+    "1.2.0": "2015-06-09T11:06:36.550Z",
+    "1.2.1": "2015-06-10T14:11:33.048Z",
+    "1.2.2": "2015-06-10T15:07:50.891Z",
+    "1.2.3": "2015-06-11T09:40:09.382Z",
+    "1.2.4": "2015-06-11T13:38:56.661Z",
+    "1.2.5": "2015-07-08T11:44:54.056Z",
+    "1.2.6": "2015-07-08T16:16:01.783Z",
+    "1.2.7": "2016-07-12T08:55:51.357Z",
+    "1.3.0": "2016-07-28T07:03:24.858Z",
+    "1.3.1": "2018-01-06T12:35:18.723Z"
+  },
+  "homepage": "https://github.com/Bruce17/dependable#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruce17/dependable.git"
+  },
+  "contributors": [
+    {
+      "name": "Jamison Dance",
+      "email": "jergason@gmail.com",
+      "url": "http://jamisondance.com"
+    },
+    {
+      "name": "Michael Raith",
+      "email": "Bruce17@users.noreply.github.com",
+      "url": "https://github.com/Bruce17"
+    }
+  ],
+  "author": {
+    "name": "Sean Hess"
+  },
+  "bugs": {
+    "url": "https://github.com/Bruce17/dependable/issues"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "dependency",
+    "injection",
+    "di",
+    "container",
+    "ioc"
+  ],
+  "_attachments": {}
+}

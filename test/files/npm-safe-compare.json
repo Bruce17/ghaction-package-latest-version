@@ -1,0 +1,707 @@
+{
+  "_id": "safe-compare",
+  "_rev": "13-0b92cf62653c62c9dc9aecdc96fa46b2",
+  "name": "safe-compare",
+  "description": "Constant-time comparison algorithm to prevent timing attacks.",
+  "dist-tags": {
+    "latest": "1.1.4"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "safe-compare",
+      "version": "1.0.0",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "matcha": "^0.6.1",
+        "mocha": "^2.4.5"
+      },
+      "gitHead": "08f35705b6b0eee22f7378074fefd9491afc970d",
+      "_id": "safe-compare@1.0.0",
+      "_shasum": "a883883f382bbc47069c41b53137f5609ed1a451",
+      "_from": ".",
+      "_npmVersion": "2.14.12",
+      "_nodeVersion": "4.3.0",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "a883883f382bbc47069c41b53137f5609ed1a451",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.0.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-9-west.internal.npmjs.com",
+        "tmp": "tmp/safe-compare-1.0.0.tgz_1456317711841_0.9849084776360542"
+      },
+      "directories": {},
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.0.1": {
+      "name": "safe-compare",
+      "version": "1.0.1",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "matcha": "^0.6.1",
+        "mocha": "^2.4.5"
+      },
+      "gitHead": "a8a138db0edc321d19499547d64c4c78f52bb4d7",
+      "_id": "safe-compare@1.0.1",
+      "_shasum": "ae89741e97c4dbd045a74bbe0c8ce10bc9d8ebc3",
+      "_from": ".",
+      "_npmVersion": "2.14.12",
+      "_nodeVersion": "4.3.0",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "ae89741e97c4dbd045a74bbe0c8ce10bc9d8ebc3",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.0.1.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-5-east.internal.npmjs.com",
+        "tmp": "tmp/safe-compare-1.0.1.tgz_1456318034116_0.04763670754618943"
+      },
+      "directories": {},
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.0.2": {
+      "name": "safe-compare",
+      "version": "1.0.2",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "matcha": "^0.7.0",
+        "mocha": "^2.4.5"
+      },
+      "gitHead": "e691aa90be76b263a761877b4d876bc9bc7f76aa",
+      "_id": "safe-compare@1.0.2",
+      "_shasum": "be17f716bae8a35a21e41c9414d2c11364d96f4e",
+      "_from": ".",
+      "_npmVersion": "2.14.20",
+      "_nodeVersion": "4.4.0",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "be17f716bae8a35a21e41c9414d2c11364d96f4e",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.0.2.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-13-west.internal.npmjs.com",
+        "tmp": "tmp/safe-compare-1.0.2.tgz_1458036696955_0.22513320669531822"
+      },
+      "directories": {},
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.0.3": {
+      "name": "safe-compare",
+      "version": "1.0.3",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha",
+        "test-travis": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "codeclimate-test-reporter": "^0.3.3",
+        "coveralls": "^2.11.9",
+        "istanbul": "^0.4.4",
+        "matcha": "^0.7.0",
+        "mocha": "^2.5.3"
+      },
+      "gitHead": "c97ba811a8fff3887981a729c797e7cf87161662",
+      "_id": "safe-compare@1.0.3",
+      "_shasum": "087ad382fed081428d2a55e152990886a9d9161b",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "087ad382fed081428d2a55e152990886a9d9161b",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.0.3.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/safe-compare-1.0.3.tgz_1468312150647_0.5505520117003471"
+      },
+      "directories": {},
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.1.0": {
+      "name": "safe-compare",
+      "version": "1.1.0",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha",
+        "test-travis": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "codeclimate-test-reporter": "^0.4.0",
+        "coveralls": "^2.11.14",
+        "istanbul": "^0.4.5",
+        "matcha": "^0.7.0",
+        "mocha": "^3.1.2"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.1.0"
+      },
+      "gitHead": "19c84692774b47b7a5001cfec22a2ec6bb08187f",
+      "_id": "safe-compare@1.1.0",
+      "_shasum": "5860b144ce1693dc7207ef23ae6cd9dfb8cd2782",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "5860b144ce1693dc7207ef23ae6cd9dfb8cd2782",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.1.0.tgz"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/safe-compare-1.1.0.tgz_1510913799541_0.3186875223182142"
+      },
+      "directories": {},
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.1.1": {
+      "name": "safe-compare",
+      "version": "1.1.1",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha",
+        "test-travis": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "codeclimate-test-reporter": "^0.4.0",
+        "coveralls": "^2.11.14",
+        "istanbul": "^0.4.5",
+        "matcha": "^0.7.0",
+        "mocha": "^3.1.2"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.1.0"
+      },
+      "gitHead": "b29bad3ff1e24d9d4bdf11bc1f7970927dc2da2b",
+      "_id": "safe-compare@1.1.1",
+      "_shasum": "efd3c0453ca4713f45f8216104abe7eaf7716637",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "efd3c0453ca4713f45f8216104abe7eaf7716637",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.1.1.tgz",
+        "fileCount": 6,
+        "unpackedSize": 8627
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/safe-compare_1.1.1_1518365171116_0.9613127923545806"
+      },
+      "_hasShrinkwrap": false,
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.1.2": {
+      "name": "safe-compare",
+      "version": "1.1.2",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha",
+        "test-travis": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "codeclimate-test-reporter": "^0.4.0",
+        "coveralls": "^2.11.14",
+        "istanbul": "^0.4.5",
+        "matcha": "^0.7.0",
+        "mocha": "^3.1.2"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.1.0"
+      },
+      "gitHead": "013c5e7af3b04f725aa7ce850b7a0cc13aa8d4cc",
+      "_id": "safe-compare@1.1.2",
+      "_shasum": "bb6f18f222fbc52c8aaa4a60db596dfb3e03006a",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "bb6f18f222fbc52c8aaa4a60db596dfb3e03006a",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.1.2.tgz",
+        "fileCount": 6,
+        "unpackedSize": 8665
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/safe-compare_1.1.2_1519812501054_0.5548318950559958"
+      },
+      "_hasShrinkwrap": false,
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.1.3": {
+      "name": "safe-compare",
+      "version": "1.1.3",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha",
+        "test-travis": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "codeclimate-test-reporter": "^0.4.0",
+        "coveralls": "^2.11.14",
+        "istanbul": "^0.4.5",
+        "matcha": "^0.7.0",
+        "mocha": "^3.1.2"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.2.0"
+      },
+      "gitHead": "8c7ef4056ec084d7147dd83d552b86b41fbd3ba0",
+      "_id": "safe-compare@1.1.3",
+      "_shasum": "e9a7b75b124dcf56c25e662e510e10b0d4645f6d",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "e9a7b75b124dcf56c25e662e510e10b0d4645f6d",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.1.3.tgz",
+        "integrity": "sha512-iAKjxcWhyoNa97H0P8KRHxSt05WQtbUac7FoI3DVCdYi9m0KRaFCagIj5pplVSkGVDrzCANepmdMB/rrBkNhNA==",
+        "fileCount": 6,
+        "unpackedSize": 8719,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb3DywCRA9TVsSAnZWagAAZh4P/iSEMsE9/x2eF58j4VS5\nQqds8TZl1RgLCG4/bfEjSTwICx4vyx/4Nc3/XXR526oh7gD3MfwMvqrnPRMZ\nuwm7UzZ1lJQ5IqoI3PRJ+ao0+azx392ujC9ks/YFhfUonpRQMVMbydFPPHmN\nsKvOTaT+DNGWU6OP9WXWl5uKTBZLbxyZ9qXAOT6ZvKG7KzDhPfNDFfWXHFEn\nnF0FS/Uu4wuUJmYwZJSiVmJzeSRb1BgqvqYiVCrvnzRuVAgaN3wsEqiNih4D\n8oER3fHzevDrCQcIz0wgRkXwWtY5LHz8M5qf9CVJGle4TkiY8mY9TOj8LOHd\nOi3+0tFK5S/7x4Ub5MJ0G8o264CNR9EPnX1Bqvf9SgThzH0zVo9cMFXNR7dC\nrLiJgrRN+kQuq7U0p6eJImtzdDz3hiAIytbW5OKPaLTgmEDrC3jPV2yTtZDu\n9jYbGECqBdBf00lfPPmluc8xuivx8bqq29uThLd6baKCow+Ccr71bqSw1u+6\nPpSSo0ozPgzVuUQ64Qlq77iC5tnvh+T8wGnPic08RtKa7GRIJgAaWr4is9BC\njaH+9K4SCPIVfAdIlidmswnDF7kqUgNXTQI3mOATqP1gWdWfxZKqOhpcuWiN\n/7MXn7i97670jfmVhbOyIdmAwUG57NfgbdLYUSZ7SHYv9yQQZxrbOQM1U8DH\nnwT7\r\n=jd0B\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/safe-compare_1.1.3_1541160111628_0.20811026653313136"
+      },
+      "_hasShrinkwrap": false,
+      "deprecated": "fix leaking length of comparator string"
+    },
+    "1.1.4": {
+      "name": "safe-compare",
+      "version": "1.1.4",
+      "description": "Constant-time comparison algorithm to prevent timing attacks.",
+      "main": "index.js",
+      "scripts": {
+        "test": "mocha",
+        "posttest": "matcha",
+        "test-travis": "node --harmony node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -u exports",
+        "coveralls": "node ./node_modules/.bin/coveralls < ./coverage/lcov.info",
+        "codeclimate": "node ./node_modules/.bin/codeclimate-test-reporter < ./coverage/lcov.info"
+      },
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bruce17/safe-compare.git"
+      },
+      "keywords": [
+        "safe-compare",
+        "secure-compare",
+        "compare",
+        "time-equivalent-comparison",
+        "time",
+        "equivalent",
+        "timing",
+        "attack",
+        "constant-time",
+        "constant",
+        "time"
+      ],
+      "author": {
+        "name": "Michael Raith"
+      },
+      "license": "MIT",
+      "bugs": {
+        "url": "https://github.com/Bruce17/safe-compare/issues"
+      },
+      "homepage": "https://github.com/Bruce17/safe-compare#readme",
+      "devDependencies": {
+        "coveralls": "^2.11.14",
+        "istanbul": "^0.4.5",
+        "matcha": "^0.7.0",
+        "mocha": "^3.1.2"
+      },
+      "dependencies": {
+        "buffer-alloc": "^1.2.0"
+      },
+      "gitHead": "4e72a98e1a750accdc3734a1e8c2f7666a363ea2",
+      "_id": "safe-compare@1.1.4",
+      "_shasum": "5e0128538a82820e2e9250cd78e45da6786ba593",
+      "_from": ".",
+      "_npmVersion": "2.15.5",
+      "_nodeVersion": "4.4.5",
+      "_npmUser": {
+        "name": "bruce17",
+        "email": "mia87@web.de"
+      },
+      "dist": {
+        "shasum": "5e0128538a82820e2e9250cd78e45da6786ba593",
+        "tarball": "https://registry.npmjs.org/safe-compare/-/safe-compare-1.1.4.tgz",
+        "integrity": "sha512-b9wZ986HHCo/HbKrRpBJb2kqXMK9CEWIE1egeEvZsYn69ay3kdfl9nG3RyOcR+jInTDf7a86WQ1d4VJX7goSSQ==",
+        "fileCount": 6,
+        "unpackedSize": 8899,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJceYNMCRA9TVsSAnZWagAA5wcP/jtMMpTzD2gZu3q5i1JL\nldHwspMR6QYz8X1xxiWVW3NXIgEchZgdCKNq4rLxbZs2yGK3ec8W8votYWdn\n6Rv3uoA5kEgFczrceheA2+XXqM33c3KV/BaWfeZAaAIKLCA394vzHARjW5UJ\nrS7Wnp35xl+Dh0Ga8Zi4uSQJUby7ou0e+qMoVvl6dHuLNCzc+/MSc0eGzJ0s\n9HNan4hfgwAmj9b5/bAsRnlM1MwDqK2Nng/kMqLW70PcnKr744zCCImnDEVa\n/uFG/qJ0FAIah4xa86ZWiDtPFxd2nAr0YmY8mXX1+nAC/reMt5ox/gb2XEuV\nqDeDTf5qUz9p2vFMNSwzcsSukV0CmZVxofDHifICqoEgwfprl2KbAj2ShnoZ\nt4FwXb0qG8n7aelOhBlAKyksEZ+NgqikyFy4pt70DJ5zmmFwTYh6AhkGlwl3\n74VXlBlXbDmMcoYcl6RBMoWMTnJtjn06t0MiZLODq4PXH9kucFMZRAIZIi+J\nJWU395yzDwuTtGJbxzMrpfgULk40t48wPmK+VafbMSEx3a+ILieWJNBOWvy7\nXXl55XD2BBNmonfKnAMa9Nt35+HvBoXiRCni3oZEqBwIIGz5eU9FF7hup/iH\n1HZOMaDNK5om0A1SnEsQTc3XaVbOC+v4ciaGq3P1mJmkDHk1rB/aMwvp7z7m\nv0w2\r\n=7OCU\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "maintainers": [
+        {
+          "name": "bruce17",
+          "email": "mia87@web.de"
+        }
+      ],
+      "directories": {},
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/safe-compare_1.1.4_1551467340052_0.8478336222823595"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "readme": "# safe-compare\nConstant-time comparison algorithm to prevent Node.js timing attacks.\n\nFor more information about Node.js timing attacks, please visit https://snyk.io/blog/node-js-timing-attack-ccc-ctf/.\n\n[![npm package](https://img.shields.io/npm/v/safe-compare.svg?style=flat-square)](https://www.npmjs.org/package/safe-compare)\n[![tag:?](https://img.shields.io/github/tag/Bruce17/safe-compare.svg?style=flat-square)](https://github.com/Bruce17/safe-compare/releases)\n[![Dependency Status](https://david-dm.org/Bruce17/safe-compare.svg?style=flat-square)](https://david-dm.org/Bruce17/safe-compare)\n[![devDependency Status](https://david-dm.org/Bruce17/safe-compare/dev-status.svg?style=flat-square)](https://david-dm.org/Bruce17/safe-compare#info=devDependencies)\n[![Coverage Status](https://coveralls.io/repos/github/Bruce17/safe-compare/badge.svg?branch=master)](https://coveralls.io/github/Bruce17/safe-compare?branch=master)\n[![Code Climate](https://codeclimate.com/github/Bruce17/safe-compare/badges/gpa.svg)](https://codeclimate.com/github/Bruce17/safe-compare)\n[![Known Vulnerabilities](https://snyk.io/test/github/bruce17/safe-compare/badge.svg)](https://snyk.io/test/github/bruce17/safe-compare)\n[![Build Status - Tarvis](https://travis-ci.org/Bruce17/safe-compare.svg?style=flat-square&branch=master)](https://travis-ci.org/Bruce17/safe-compare)\n[![Build status - AppVeyor](https://ci.appveyor.com/api/projects/status/ounmeq5c4ajuu7g3/branch/master?svg=true)](https://ci.appveyor.com/project/Bruce17/safe-compare/branch/master)\n\n**NOTICE**:\n\nIf you are using Node.js v6.6.0 or higher, you can use [crypto.timingSafeEqual(a, b)](https://nodejs.org/api/crypto.html#crypto_crypto_timingsafeequal_a_b) from the `crypto` module. Keep in mind that the method `crypto.timingSafeEqual` only accepts `Buffer`s with the same length! This bundle will handle strings with different lengths for you.\n\n\n## Installation\n\n```\n$ npm install safe-compare --save\n```\n\n\n## Usage\n\n```javascript\nvar safeCompare = require('safe-compare');\n\nsafeCompare('hello world', 'hello world'); // -> true\n\nsafeCompare('hello', 'not hello'); // -> false\nsafeCompare('hello foo', 'hello bar'); // -> false\n```\n\nNote: runtime is always corresponding to the length of the first parameter.\n\n\n## Tests\n\n```\n$ npm test\n```\n\n\n## What's the improvement of this package?\n\nThis Node.js module is a improvement of the two existing modules [scmp](https://github.com/freewil/scmp) and [secure-compare](https://github.com/vdemedes/secure-compare). It uses the best parts of both implementations.\n\nThe implementation of [scmp](https://github.com/freewil/scmp) is a good base, but it has a shorter execution time if the string's length is not equal. The package [secure-compare](https://github.com/vdemedes/secure-compare) always compares the two input strings, but its implementation is not as clean as in [scmp](https://github.com/freewil/scmp).\n\n\n## License\n\nsafe-compare is released under the MIT license.\n",
+  "maintainers": [
+    {
+      "name": "bruce17",
+      "email": "mia87@web.de"
+    }
+  ],
+  "time": {
+    "modified": "2019-03-01T19:10:54.594Z",
+    "created": "2016-02-24T12:41:54.222Z",
+    "1.0.0": "2016-02-24T12:41:54.222Z",
+    "1.0.1": "2016-02-24T12:47:15.053Z",
+    "1.0.2": "2016-03-15T10:11:39.008Z",
+    "1.0.3": "2016-07-12T08:29:13.282Z",
+    "1.1.0": "2017-11-17T10:16:40.519Z",
+    "1.1.1": "2018-02-11T16:06:11.774Z",
+    "1.1.2": "2018-02-28T10:08:21.131Z",
+    "1.1.3": "2018-11-02T12:01:51.773Z",
+    "1.1.4": "2019-03-01T19:09:00.206Z"
+  },
+  "homepage": "https://github.com/Bruce17/safe-compare#readme",
+  "keywords": [
+    "safe-compare",
+    "secure-compare",
+    "compare",
+    "time-equivalent-comparison",
+    "time",
+    "equivalent",
+    "timing",
+    "attack",
+    "constant-time",
+    "constant",
+    "time"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bruce17/safe-compare.git"
+  },
+  "author": {
+    "name": "Michael Raith"
+  },
+  "bugs": {
+    "url": "https://github.com/Bruce17/safe-compare/issues"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}

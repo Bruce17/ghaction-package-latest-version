@@ -1,14 +1,11 @@
-const fs = require('fs')
-const path = require('path')
 const PythonRegistry = require('../../src/registries/python-registry')
+const { mockDownload } = require('./test-helpers')
 
 describe('PythonRegistry', () => {
   const inst = new PythonRegistry()
 
   // Mock the download method to not hit the internet
-  inst.download = jest.fn((opt) => {
-    return JSON.parse(fs.readFileSync(path.resolve(__dirname + `/../files/pypi-${opt.package}.json`)))
-  })
+  inst.download = mockDownload('pypi')
 
   test('class exists', () => {
     expect(typeof PythonRegistry).toBe('function')
@@ -68,7 +65,21 @@ describe('PythonRegistry', () => {
         {
           input: {
             package: 'flask',
+            conditions: 'requiresPython: >=2.5',
+          },
+          expected: '1.1.2'
+        },
+        {
+          input: {
+            package: 'flask',
             conditions: 'requiresPython: 2.7',
+          },
+          expected: '1.1.2'
+        },
+        {
+          input: {
+            package: 'flask',
+            conditions: 'requiresPython: >=2.7',
           },
           expected: '1.1.2'
         },
@@ -94,10 +105,30 @@ describe('PythonRegistry', () => {
           },
           expected: '0.5.5'
         },
+        {
+          input: {
+            package: 'opencanary',
+            conditions: 'pythonVersion: py3\nrequiresPython: >=3.7',
+          },
+          expected: '0.5.6'
+        },
+        {
+          input: {
+            package: 'opencanary',
+            conditions: 'pythonVersion: py3\nrequiresPython: >=3.7',
+          },
+          expected: '0.5.6'
+        },
       ]
   
       for (let data of testData) {
-        test(`for conditions "${JSON.stringify(data.input.conditions)}"`, async () => {
+        let testName = `for package "${data.input.package}"`
+
+        if (data.input.conditions) {
+          testName += ` with conditions "${data.input.conditions}"`
+        }
+
+        test(testName, async () => {
           expect(await inst.getLatestVersion(data.input)).toBe(data.expected)
         })
       }
