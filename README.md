@@ -28,12 +28,12 @@ Following inputs can be used as step.with keys:
 | Name       | Type      | Description |
 |------------|-----------|-------------|
 | package    | string    | Name of the package to search for. |
-| language   | string    | The target language and thus backend registry. Available options: `python` |
-| registry   | string    | Backend registry to search for the package. Format: `http(s)://some.backend.com/with/search/for/%s` where `%s` will be replaced by the actual package name. Example for PyPi: `https://pypi.org/pypi/%s/json` |
+| language   | string    | The target language and thus backend registry. Available options: `python`, `node` |
+| registry   | string    | Backend registry to search for the package. Format: `http(s)://some.backend.com/with/search/for/%s` where `%s` will be replaced by the actual package name. Example: `https://pypi.org/pypi/%s/json` (PyPi), `https://registry.npmjs.com/%s` (NPM) |
 | remoteType | string    | Expect this file type from the backend result. Default: `json`. |
-| conditions | multiline | Optional search conditions for a specific registry, see [Python Conditions](#python-conditions). Default: `''` |
+| conditions | multiline | Optional search conditions for a specific registry, see [Python Conditions](#python-conditions) or [Node Conditions](#node-conditions). Default: `''` |
 
-By choosing a `language` (e.g. `python`) the registry url will automatically set to default one (e.g. `PyPi` for `python`). You can however overwrite it with a custom registry if required.
+By choosing a `language` (e.g. `python`, `node`) the registry url will automatically set to default one (e.g. `PyPi` for `python` or `NPM` for `node`). You can however overwrite it with a custom registry if required.
 
 #### Python Conditions
 
@@ -80,6 +80,66 @@ Or by checking against the required python version:
           requiresPython: 3.7
 ```
 
+#### Node Conditions
+
+For node there is one condition to filter the found packages. Some packages define the attribute `engines` in their `package.json` file:
+
+```json
+  "engines": {
+    "node": "^8.10.0 || ^10.13.0 || >=11.10.1"
+  },
+```
+
+You can filter for packages supporting Node.js v8 by passing this filter:
+
+```yaml
+    # ...
+    - uses: Bruce17/ghaction-package-latest-version@v1
+      with:
+        package: eslint
+        language: node
+        conditions: |
+          node: ^8.0.0
+```
+
+Also more complex filter conditions are possible:
+
+```yaml
+    # ...
+    - uses: Bruce17/ghaction-package-latest-version@v1
+      with:
+        package: eslint
+        language: node
+        conditions: |
+          node: ^8.10.0 || ^10.13.0 || >=11.10.1
+```
+
+You can also filter for `iojs` if it is still required:
+
+```yaml
+    # ...
+    - uses: Bruce17/ghaction-package-latest-version@v1
+      with:
+        package: @bruce17/dependable
+        language: node
+        conditions: |
+          iojs: >=1.0.0
+```
+
+And also combine Node.js and io.js filters:
+
+```yaml
+    # ...
+    - uses: Bruce17/ghaction-package-latest-version@v1
+      with:
+        package: @bruce17/dependable
+        language: node
+        conditions: |
+          node: >=0.10.0
+          iojs: >=1.0
+```
+
+
 
 ### Outputs
 
@@ -89,12 +149,6 @@ Following outputs are available:
 |---------------|-----------|-------------|
 | latestVersion | string    | Latest found package version in the registry. |
 
-
-## Todo
-
-At the moment only one language/registry is supported:
-
-[ ] Add support for Node.js/NPM
 
 
 ## Keep up-to-date with GitHub Dependabot
