@@ -130,4 +130,19 @@ module.exports = class AbstractRegistry {
 
     return result
   }
+
+  /**
+   * 
+   * @param {object} versions
+   *
+   * @returns {object}
+   */
+  _sortVersions(versions) {
+    return Object.keys(versions)
+      .sort((a, b) => semver.rcompare(a, b))
+      .reduce((result, key) => {
+        result.push(versions[key])
+        return result
+      }, [])
+  }
 }

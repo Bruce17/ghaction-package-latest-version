@@ -12,7 +12,7 @@ module.exports = class PythonRegistry extends AbstractRegistry {
    * @inheritdoc
    */
   async getLatestVersion(options = { package: '', type: 'json', conditions: '' }) {
-    const json = await this.download({ package: options.package, type: options.type })
+    const json = await this.download({ package: options.package, type: options.type || 'json' })
     const versions = this._prepareVersions(json)
     let filteredVersions = this._sortVersions(versions)
     const conditions = this._prepareConditions(options.conditions)
@@ -57,21 +57,6 @@ module.exports = class PythonRegistry extends AbstractRegistry {
     }
 
     return versions
-  }
-
-  /**
-   * 
-   * @param {object} versions
-   *
-   * @returns {object}
-   */
-  _sortVersions(versions) {
-    return Object.keys(versions)
-      .sort((a, b) => semver.rcompare(a, b))
-      .reduce((result, key) => {
-        result.push(versions[key])
-        return result
-      }, [])
   }
 
   /**

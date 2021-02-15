@@ -1,3 +1,4 @@
+const NodeRegistry = require('./node-registry')
 const PythonRegistry = require('./python-registry')
 
 module.exports = class RegistryFactory {
@@ -11,10 +12,16 @@ module.exports = class RegistryFactory {
    * @throws {Error} If no registry is implemented for target language.
    */
   static getRegistry(language) {
-    switch (language) {
+    if (typeof language !== 'string') {
+      throw new TypeError('Argument "language" is not of type "string"!')
+    }
+
+    switch (language.toLowerCase()) {
       case 'python':
-      case 'Python':
         return new PythonRegistry()
+  
+      case 'node':
+        return new NodeRegistry()
 
       default:
         throw new Error(`Not implemented for language "${language}"!`)

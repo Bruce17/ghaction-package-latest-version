@@ -1,3 +1,4 @@
+const NodeRegistry = require('../../src/registries/node-registry')
 const PythonRegistry = require('../../src/registries/python-registry')
 const RegistryFactory = require('../../src/registries/registry-factory')
 
@@ -11,7 +12,7 @@ describe('RegistryFactory', () => {
       expect(typeof RegistryFactory.getRegistry).toBe('function')
     })
 
-    describe('invalid registries', () => {
+    describe('invalid language argument', () => {
       const testData = [
         { language: undefined },
         { language: null },
@@ -19,8 +20,21 @@ describe('RegistryFactory', () => {
         { language: [] },
         { language: true },
         { language: false },
-        { language: '' },
         { language: 123 },
+      ]
+
+      for (let obj of testData) {
+        test(`throws for language "${obj.language}"`, () => {
+          expect(() => {
+            RegistryFactory.getRegistry(obj.language)
+          }).toThrowError(/argument "language" is not of type "string"!/i)
+        })
+      }
+    })
+
+    describe('invalid registries', () => {
+      const testData = [
+        { language: '' },
         { language: 'foo' },
       ]
 
@@ -35,8 +49,10 @@ describe('RegistryFactory', () => {
 
     describe('is valid registries', () => {
       const testData = [
-        { language: 'python' },
-        { language: 'Python' },
+        { language: 'python', expected: PythonRegistry },
+        { language: 'Python', expected: PythonRegistry },
+        { language: 'node',   expected: NodeRegistry },
+        { language: 'Node',   expected: NodeRegistry },
       ]
 
       for (let obj of testData) {
@@ -44,7 +60,7 @@ describe('RegistryFactory', () => {
           const result = RegistryFactory.getRegistry(obj.language)
 
           expect(result).toBeDefined()
-          expect(result).toBeInstanceOf(PythonRegistry)
+          expect(result).toBeInstanceOf(obj.expected)
         })
       }
     })

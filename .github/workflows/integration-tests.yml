@@ -1,0 +1,88 @@
+name: tests
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'releases/*'
+
+jobs:
+  # test python packages
+  test-python:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # Basic test
+    - uses: ./
+      id: pkg_py_version
+      with:
+        package: flask
+        language: python
+    
+    - name: Display latest package version
+      run: |
+        echo "${{ steps.pkg_py_version.outputs.latestVersion }}"
+
+    # Search for a specific python version
+    - uses: ./
+      with:
+        package: flask
+        language: python
+        conditions: |
+          pythonVersion: py2
+
+    # Search for a specific python version
+    - uses: ./
+      with:
+        package: flask
+        language: python
+        conditions: |
+          pythonVersion: 2.7
+
+    # Search for a required python version
+    - uses: ./
+      with:
+        package: flask
+        language: python
+        conditions: |
+          requiresPython: 2.5
+
+  # test npm packages
+  test-npm:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    # Basic test
+    - uses: ./
+      id: pkg_node_version
+      with:
+        package: safe-compare
+        language: node
+    
+    - name: Display latest package version
+      run: |
+        echo "${{ steps.pkg_node_version.outputs.latestVersion }}"
+
+    # Search for a specific node version
+    - uses: ./
+      with:
+        package: eslint
+        language: node
+        conditions: |
+          node: ^8.10.0
+
+    - uses: ./
+      with:
+        package: eslint
+        language: node
+        conditions: |
+          node: ^8.10.0 || ^10.13.0
+
+    - uses: ./
+      with:
+        package: eslint
+        language: node
+        conditions: |
+          node: ^8.10.0 || ^10.13.0 || >=11.10.1
