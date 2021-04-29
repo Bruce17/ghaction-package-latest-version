@@ -38,7 +38,7 @@
     "semver": "^7.3.4"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.28.3",
+    "@vercel/ncc": "^0.28.4",
     "eslint": "^7.25.0",
     "jest": "^26.1.0"
   }
