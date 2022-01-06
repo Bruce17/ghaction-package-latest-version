@@ -7,3 +7,6 @@ updates:
     # Check the npm registry for updates every day (weekdays)
     schedule:
       interval: "daily"
+    allow:
+      # Allow only checks against production dependencies (ignores all devDependencies)
+      - dependency-type: "production"
