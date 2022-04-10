@@ -35,7 +35,7 @@
   "dependencies": {
     "@actions/core": "^1.6.0",
     "bent": "^7.3.12",
-    "semver": "^7.3.4"
+    "semver": "^7.3.6"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.33.1",
