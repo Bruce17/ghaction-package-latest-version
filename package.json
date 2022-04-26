@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/Bruce17/ghaction-package-latest-version#readme",
   "dependencies": {
-    "@actions/core": "^1.6.0",
+    "@actions/core": "^1.7.0",
     "bent": "^7.3.12",
     "semver": "^7.3.7"
   },
